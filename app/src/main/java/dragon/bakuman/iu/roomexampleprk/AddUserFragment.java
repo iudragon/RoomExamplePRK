@@ -31,10 +31,10 @@ public class AddUserFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_add_user, container, false);
 
-        mUserEmail = view.findViewById(R.id.editTextEmail);
-        mUserName = view.findViewById(R.id.editTextName);
-        mUserId = view.findViewById(R.id.editTextID);
-        btnSave = view.findViewById(R.id.btnSaveUser);
+        mUserEmail = view.findViewById(R.id.editTextEmailUpdate);
+        mUserName = view.findViewById(R.id.editTextNameUpdate);
+        mUserId = view.findViewById(R.id.editTextIDUpdate);
+        btnSave = view.findViewById(R.id.btnSaveUserUpdate);
 
 
         btnSave.setOnClickListener(new View.OnClickListener() {
