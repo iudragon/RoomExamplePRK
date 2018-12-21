@@ -3,6 +3,7 @@ package dragon.bakuman.iu.roomexampleprk;
 //you can specify possible methods for database operation within this interface
 
 import android.arch.persistence.room.Dao;
+import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
 import android.arch.persistence.room.Query;
 
@@ -15,8 +16,10 @@ public interface MyDao {
     void addUser(User user);
 
     @Query("select * from users")
-    public List<User> getUsers(); //this method will read all the users and the return type is a List
+    List<User> getUsers(); //this method will read all the users and the return type is a List
 
+    @Delete
+    void deleteUser(User user);
 
 
 }
